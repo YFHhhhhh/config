@@ -1,0 +1,9 @@
+sn|snazzy|around
+foldle|foldlevel|vimlsp
+list|list|vimlsp
+let|leveladjust|vimlsp
+let|let|vimlsp
+le|leaderf|around
+NERDTreeTo|NERDTreeToggle|around
+Bo|Box2d|around
+no|norm_square|around

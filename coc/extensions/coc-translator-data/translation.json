@@ -1,0 +1,74 @@
+[
+  {
+    "id": "f87ff1b1-d4f5-47f0-a731-b4eade13af0a",
+    "content": [
+      "hidden",
+      "隐"
+    ],
+    "path": "file:///home/yangfenghuang/.config/nvim/init.vim\t52\t10"
+  },
+  {
+    "id": "2852bed2-5e87-4afe-9cda-e4f43f0b0e81",
+    "content": [
+      "set",
+      "放"
+    ],
+    "path": "file:///home/yangfenghuang/.tmux.conf\t1\t1"
+  },
+  {
+    "id": "cffdc042-6eaf-4dfa-a582-cf487c38493c",
+    "content": [
+      "map",
+      "地图"
+    ],
+    "path": "file:///home/yangfenghuang/.config/nvim/init.vim\t23\t1"
+  },
+  {
+    "id": "c2966d5b-d960-40a3-9625-6387b0417a94",
+    "content": [
+      "call",
+      "称呼"
+    ],
+    "path": "file:///home/yangfenghuang/.config/nvim/init.vim\t25\t1"
+  },
+  {
+    "id": "32e053eb-87e6-44e5-b929-4fcfc2f9b4f2",
+    "content": [
+      "config",
+      "配置"
+    ],
+    "path": "file:///home/yangfenghuang/.config/nvim/init.vim\t53\t48"
+  },
+  {
+    "id": "7abae086-f739-4bba-a0bb-db6c3b53bef4",
+    "content": [
+      "Leader",
+      "领导"
+    ],
+    "path": "file:///home/yangfenghuang/.config/nvim/init.vim\t101\t9"
+  },
+  {
+    "id": "2cbb3d23-ff37-4737-ac58-8a81a63d66ef",
+    "content": [
+      "nmap",
+      "地图"
+    ],
+    "path": "file:///home/yangfenghuang/.config/nvim/init.vim\t100\t1"
+  },
+  {
+    "id": "ae3078e6-31c1-4a04-905f-ba61090d65d8",
+    "content": [
+      "a",
+      "一个"
+    ],
+    "path": "file:///home/yangfenghuang/.config/nvim/init.vim\t89\t3"
+  },
+  {
+    "id": "96277356-6b2d-4d34-ad6d-908416b38790",
+    "content": [
+      "let",
+      "让"
+    ],
+    "path": "file:///home/yangfenghuang/.config/nvim/init.vim\t1\t1"
+  }
+]
