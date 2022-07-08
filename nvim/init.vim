@@ -18,10 +18,14 @@ map <silent> <F3> :NERDTreeToggle<CR>
 nmap qq :noh<CR>
 nmap , ^
 nmap . $
-map wd :set splitright<CR>:vsplit<CR>
-map wa :set nosplitright<CR>:vsplit<CR>
-map ws :set splitbelow<CR>:split<CR>
-map ww :set nosplitbelow<CR>:split<CR>
+map <leader>wd :set splitright<CR>:vsplit<CR>
+map <leader>wa :set nosplitright<CR>:vsplit<CR>
+map <leader>ws :set splitbelow<CR>:split<CR>
+map <leader>ww :set nosplitbelow<CR>:split<CR>
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
 
 call plug#begin()
 Plug 'scrooloose/nerdtree'
@@ -32,9 +36,19 @@ Plug 'yggdroot/leaderf'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'Yggdroot/indentLine'
+Plug 'plasticboy/vim-markdown'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'connorholyday/vim-snazzy'
+Plug 'godlygeek/tabular'
+Plug 'iamcco/markdown-preview.nvim'
 call plug#end()
+
+"=============Markdown================
+let g:mkdp_path_to_chrome = "path/of/chrome"
+let g:vim_markdown_math = 1
+
+"=============clang-format=============
+map <silent> <C-f> :ClangFormat<CR>
 
 "=============snazzy===============
 colorscheme snazzy
@@ -48,7 +62,7 @@ let g:DoxygenToolkit_returnTag = "@return "
 let g:DoxygenToolkit_briefTag_funcName = "yes"
 
 "============coc.nvim===============
-let g:coc_global_extensions = ['coc-json' , 'coc-clangd' , 'coc-cmake' , 'coc-vimlsp' , 'coc-translator', 'coc-actions']
+let g:coc_global_extensions = ['coc-json' , 'coc-python', 'coc-cmake' , 'coc-vimlsp' , 'coc-translator', 'coc-actions']
 set hidden
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -94,8 +108,11 @@ function! s:cocActionsOpenFromSelected(type) abort
 endfunction
 map cc :CocCommand<CR>
 "------------coc-actions------------------
-xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
-nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>q :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>q :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
 "------------coc-translator---------------
 " NOTE: do NOT use `nore` mappings
 " popup
